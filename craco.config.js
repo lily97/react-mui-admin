@@ -18,7 +18,7 @@ module.exports = {
     }],
     devServer: {
         // 本地服务的端口号
-        port: 3002,
+        port: 3000,
         // 本地服务的响应头设置
         headers: {
             // 允许跨域
