@@ -1,5 +1,5 @@
 // import './App.css';
-// import Index from './pages/home/index'
+// import Home from './views/home'
 // function App() {
 //   return (
 //     <div className="App">
@@ -13,36 +13,38 @@
 // export default App;
 
 import React, { Component } from 'react';
-// import { HashRouter as Router, Link, Route } from 'react-router-dom';
+import { BrowserRouter, Link, Route } from 'react-router-dom';
 import Layout from '../src/components/Layout'
 import './App.css';
 
 
-// function Home() {
-//   return (
-//     <div>
-//       <h2>Home</h2>
-//     </div>
-//   )
-// }
 
-// const About = () => (
-//   <div>
-//     <svg data-testid="DeleteIcon"></svg>
-//     <h2>About</h2>
-//   </div>
-// )
+const Home = () => {
+  return (
+    <div>
+      <h2>Home</h2>
+    </div>
+  )
+}
 
-// const Product = () => (
-//   <div>
-//     <h2>Product</h2>
-//   </div>
-// )
+const About = () => (
+  <div>
+    <h2>About</h2>
+  </div>
+)
 
+const Product = () => (
+  <div>
+    <h2>Product</h2>
+  </div>
+)
+
+
+console.log(Home);
 class App extends Component {
   render() {
     return (
-      // <Router>
+      // <BrowserRouter>
       //   <div className="App">
       //     <Link to="/">Home</Link>
       //     <Link to="/About">About</Link>
@@ -52,7 +54,7 @@ class App extends Component {
       //     <Route path="/about" component={About}></Route>
       //     <Route path="/product" component={Product}></Route>
       //   </div>
-      // </Router>
+      // </BrowserRouter>
       <Layout></Layout>
     );
   }
